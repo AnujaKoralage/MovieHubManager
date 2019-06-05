@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.ManageActorController">
+
+    <children>
+        <Label alignment="CENTER" layoutX="156.0" layoutY="25.0" prefHeight="37.0" prefWidth="271.0" text="Manage ACTORS">
+            <font>
+                <Font name="Showcard Gothic" size="24.0" />
+            </font></Label>
+        <Label layoutX="61.0" layoutY="112.0" text="Actor ID" />
+        <Label layoutX="61.0" layoutY="165.0" text="Actor Name" />
+        <TextField fx:id="txt_actorId" layoutX="172.0" layoutY="107.0" prefHeight="31.0" prefWidth="380.0" />
+        <TextField fx:id="txt_actorName" layoutX="172.0" layoutY="160.0" prefHeight="31.0" prefWidth="380.0" />
+        <Button fx:id="btn_save" layoutX="172.0" layoutY="244.0" mnemonicParsing="false" onAction="#saveActor" text="Save" />
+        <Button fx:id="btn_delete" layoutX="266.0" layoutY="244.0" mnemonicParsing="false" onAction="#deleteActor" text="Delete" />
+        <TableView fx:id="tbl_actor" layoutY="281.0" prefHeight="165.0" prefWidth="600.0">
+            <columns>
+                <TableColumn prefWidth="149.0" text="ID" />
+                <TableColumn prefWidth="320.0" text="Name" />
+            <TableColumn prefWidth="129.0" text="Age" />
+            </columns>
+        </TableView>
+        <Button fx:id="btn_update" layoutX="165.0" layoutY="244.0" mnemonicParsing="false" onAction="#updateActor" text="Update" />
+        <Button fx:id="btn_back" layoutX="512.0" layoutY="28.0" mnemonicParsing="false" onAction="#toDashboard" text="Back" />
+      <Label layoutX="61.0" layoutY="213.0" text="Actor Age" />
+      <TextField fx:id="txt_actorAge" layoutX="173.0" layoutY="208.0" prefHeight="31.0" prefWidth="380.0" />
+    </children>
+
+</AnchorPane>
